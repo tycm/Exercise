@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="/assets/stylesheets/styles.css" type="text/css">
+	<title>Student info page</title>
+</head>
+
+<body>
+	<div class="main">
+		<table id="student">
+			<tr>
+				<th>Name</th>
+				<th>Degree</th>
+				<th>Program</th>
+			</tr>
+			<% students.forEach(student => { %>
+				<tr>
+					<td>
+						<%= student.firstName + " " + student.lastName %>
+					</td>
+					<td>
+						<%= student.degree %>
+					</td>
+					<td>
+						<%= student.program %>
+					</td>
+				</tr>
+			<% }); %> 
+		</table>
+		<% include image.ejs %>
+	</div>
+</body>
+
+</html>

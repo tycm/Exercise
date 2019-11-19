@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="stylesheet" href="/assets/styles.css" type="text/css">
+</head>
+
+<body>
+	<h1>Index</h1>
+
+
+	<form id="student-form" method="POST" action="/studentInfo">
+		<label for="firstName">FirstName</label>
+		<input type="text" name="firstName">
+		<label for="lastName">LastName</label>
+		<input type="text" name="lastName">
+		<label for="degree">Degree</label>
+		<input type="text" name="degree">
+		<label for="program">Program</label>
+		<input type="text" name="program">
+		<input type="submit" value="submit"/>
+	</form>
+<br>
+<h3>Search</h3>
+	<form action="/studentinfo/search" method="post">
+		<label for="firstName">First Name:</label>
+		<input type="text" name="firstName">
+		<input type="submit" value="search">
+	</form>
+	<p>The number of form submissions is <%= count %></p>
+	<a href="/studentinfo/allstudents">All students</a>
+
+</body>
+
+</html>

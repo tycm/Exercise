@@ -1,0 +1,24 @@
+{
+  "name": "exercise4",
+  "version": "1.0.0",
+  "description": "Exercise 4",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ex4",
+    "4166"
+  ],
+  "author": "Timothy McCrickard",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^2.7.1",
+    "express": "^4.17.1",
+    "express-session": "^1.17.0",
+    "express-validator": "^6.2.0",
+    "mongoose": "^5.7.10",
+    "nodemon": "^1.19.4"
+  }
+}
